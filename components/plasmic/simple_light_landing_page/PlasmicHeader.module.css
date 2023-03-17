@@ -15,11 +15,16 @@
   align-items: stretch;
   justify-content: flex-start;
 }
-.svg__lbJLz {
+.img {
+  position: relative;
   object-fit: cover;
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
+  max-width: 100%;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
 }
 .freeBox {
   display: flex;
@@ -128,7 +133,7 @@
   width: 24px;
   height: 24px;
 }
-.svg__bs6YL {
+.svg {
   position: relative;
   object-fit: cover;
   width: 1em;

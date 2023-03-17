@@ -38,6 +38,8 @@
 }
 .header:global(.__wab_instance) {
   position: relative;
+  height: 17px;
+  flex-shrink: 0;
 }
 .topSection:global(.__wab_instance) {
   position: relative;

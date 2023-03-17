@@ -26,7 +26,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_simple_light_landing_page.module.css"; // plasmic-import: tczukc3QRaUy2S2e1ykNYP/projectcss
 import sty from "./PlasmicHeader.module.css"; // plasmic-import: dPDEhKmGLUtA/css
-import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: OZ51HDVZDRt50/icon
 import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: LOWALOghoPHRm/icon
 
 export const PlasmicHeader__VariantProps = new Array();
@@ -89,9 +88,24 @@ function PlasmicHeader__RenderFunc(props) {
         href={`/`}
         platform={"nextjs"}
       >
-        <LogoIcon
-          className={classNames(projectcss.all, sty.svg__lbJLz)}
-          role={"img"}
+        <p.PlasmicImg
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={"auto"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={"100%"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"auto"}
+          loading={"lazy"}
+          src={{
+            src: "/plasmic/zebra_barcodes/images/logopng.png",
+            fullWidth: 50,
+            fullHeight: 50,
+            aspectRatio: undefined
+          }}
         />
       </p.PlasmicLink>
 
@@ -136,7 +150,9 @@ function PlasmicHeader__RenderFunc(props) {
             className={classNames("__wab_instance", sty.button__m34Sx)}
             endIcon={
               <RightArrowIcon
-                className={classNames(projectcss.all, sty.svg__bs6YL)}
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
                 role={"img"}
               />
             }
@@ -151,9 +167,11 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "freeBox"],
-  link: ["link"],
-  freeBox: ["freeBox"]
+  root: ["root", "link", "img", "freeBox", "svg"],
+  link: ["link", "img"],
+  img: ["img"],
+  freeBox: ["freeBox", "svg"],
+  svg: ["svg"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -190,7 +208,9 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
+    img: makeNodeComponent("img"),
     freeBox: makeNodeComponent("freeBox"),
+    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps

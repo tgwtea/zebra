@@ -177,6 +177,7 @@ function PlasmicHome__RenderFunc(props) {
                       role={"img"}
                     />
                   }
+                  link={"https://buy.zebrabarcodes.com"}
                   showEndIcon={true}
                 >
                   <div
@@ -388,9 +389,9 @@ function PlasmicHome__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   src={{
-                    src: "/plasmic/simple_light_landing_page/images/simpleProject.png",
-                    fullWidth: 1000,
-                    fullHeight: 924,
+                    src: "/plasmic/simple_light_landing_page/images/upcPrefixpng.png",
+                    fullWidth: 446,
+                    fullHeight: 397,
                     aspectRatio: undefined
                   }}
                 />
@@ -464,6 +465,7 @@ function PlasmicHome__RenderFunc(props) {
                 role={"img"}
               />
             }
+            link={"https://buy.zebrabarcodes.com"}
             showEndIcon={true}
           >
             <div

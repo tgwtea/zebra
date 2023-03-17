@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -32,12 +32,13 @@
       "images": [],
       "indirect": true,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "tczukc3QRaUy2S2e1ykNYP",
       "projectApiToken": "blxSxX86ehEA2wZl3BBiAt9koxp4x92Q7Ax8DaoroFyzQYl2RpLux2vWQCj6NCWhUx41QZs25NXc7m1r5YAjQ",
-      "projectName": "Simple Light Landing Page",
+      "projectName": "Zebra Barcodes",
       "version": "latest",
       "cssFilePath": "plasmic/simple_light_landing_page/plasmic_simple_light_landing_page.module.css",
       "components": [
@@ -407,6 +408,11 @@
           "id": "Mtszbbifc",
           "name": "upc and ean barcode number.png",
           "filePath": "../public/plasmic/simple_light_landing_page/images/upcAndEanBarcodeNumberpng.png"
+        },
+        {
+          "id": "MWkdlrkRi",
+          "name": "logo.png",
+          "filePath": "../public/plasmic/zebra_barcodes/images/logopng.png"
         }
       ],
       "indirect": false,
